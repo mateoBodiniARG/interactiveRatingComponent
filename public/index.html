@@ -1,31 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-   <main>
-    <article class="container"> 
+  </head>
+  <body>
+    <main>
+      <article class="container hidden-visible">
+        <!-- IMG CONTAINER -->
         <div class="img__container">
-            <img src="/public/icon-star.svg" alt="">
+          <img src="/public/icon-star.svg" alt="" />
         </div>
-
+        <!-- TEXT CONTAINER -->
         <div class="text__container">
-            <h1>How did we do?</h1>
-            <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+          <h1>How did we do?</h1>
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
         </div>
-    </article>
-   </main>
-      
-      
-      
-      
+        <!-- FORM CONTAINER -->
+        <form class="form__container">
+          <div class="imput__container">
+            <input
+              class="input-number"
+              type="radio"
+              id="1"
+              value="1"
+              name="number"
+            />
+            <label class="input-label" for="1">1</label>
 
-   <script src="app.js"></script> 
-</body>
+            <input
+              class="input-number"
+              type="radio"
+              id="2"
+              value="2"
+              name="number"
+            />
+            <label class="input-label" for="2">2</label>
+
+            <input
+              class="input-number"
+              type="radio"
+              id="3"
+              value="3"
+              name="number"
+            />
+            <label class="input-label" for="3">3</label>
+
+            <input
+              class="input-number"
+              type="radio"
+              id="4"
+              value="4"
+              name="number"
+            />
+            <label class="input-label" for="4">4</label>
+
+            <input
+              class="input-number"
+              type="radio"
+              id="5"
+              value="5"
+              name="number"
+            />
+            <label class="input-label" for="5">5</label>
+          </div>
+          
+          <div class="error-message hidden2">Please select a number</div>
+          
+          <div class="form__button">
+            <button type="submit" class="form__btn-submit">SUBMIT</button>
+          </div>
+        </form>
+      </article>
+
+      <!-- THANK YOU SECTION -->
+      <article class="thankYou hidden">
+        <!-- IMG -->
+        <div class="thankYou__img">
+            <img src="/public/illustration-thank-you.svg" alt="" />
+        </div>
+        <!-- RESULT -->
+        <div class="thankYou__result">
+            You slected <span class="thankYou__number">0</span> out of 5
+        </div>
+        <!-- MESSAGE -->
+        <h2> Thank you!</h2>
+        <p class="thankYou__message">We appreciate you taking the time to give a rating. If you ever need more support, dont't hesitate to get in touch!</p>
+      </article>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
 </html>
